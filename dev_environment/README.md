@@ -7,3 +7,7 @@
 [参考](https://devfile.io/docs/2.0.0/what-is-a-devfile)
 
 簡単に言うと、開発環境 as Codeという感じです。
+
+## CodeCatalystにおけるdevfileの利用方法
+
+[ここ](https://docs.aws.amazon.com/ja_jp/codecatalyst/latest/userguide/devenvironment-create.html)を見ておけばよさそうです。
