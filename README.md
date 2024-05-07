@@ -1,4 +1,4 @@
-# Amazon CodeCatalystをセットアップする
+# AWS Builder IDを使ってAmazon CodeCatalystをセットアップする
 
 ## はじめに
 
@@ -70,7 +70,7 @@ AWS Builder IDでログインします。今回は事前に登録しておいた
 
 ![builder_id1.png](./images/builder_id1.png)
 
-つぎにパスワードを入力して、サインインをクリックします。
+次にパスワードを入力して、サインインをクリックします。
 
 ![builder_id2.png](./images/builder_id2.png)
 
@@ -82,8 +82,79 @@ CodeCatalystではスペースを作成したのち、その中にプロジェ�
 では、スペースを作成します。
 スペース名とAWSのアカウントIDを入力します。リージョンはオレゴンです。
 
-![cc_1.png](./images/cc_1.png)
-
 `Verify in AWS`をクリックします。
 
-スペースが作成されました。
+![cc_1.png](./images/cc_1.png)
+
+次に`Verify space`をクリックします。
+
+![cc_2.png](./images/cc_2.png)
+
+`Verify space`クリック後は以下のような画面に遷移します。
+
+![cc_3.png](./images/cc_3.png)
+
+元の画面に戻って、`Create space`をクリックします。
+
+![cc_4.png](./images/cc_4.png)
+
+これでスペースが作成されました。
+
+## プロジェクトを作成する
+
+次にプロジェクトを作成します。`Create project`をクリックします。
+
+![cc_5.png](./images/cc_5.png)
+
+ブループリントからプロジェクトを作成することもできますが、今回はGitHubからリポジトリをリンクするため、`Start from Scratch`を選択します。
+
+プロジェクト名は任意の名前を入力します。今回は`GitHubProject`とします。
+
+![cc_7.png](./images/cc_7.png)
+
+## GitHub 拡張をインストールする
+
+CodeCatalystでGitHubのリポジトリを利用する場合はGitHub拡張をインストールする必要があります。
+マーケットボタンをクリックします。
+
+![cc_8.png](./images/cc_8.png)
+
+GitHub拡張をインストールします。`Install`をクリックします。
+
+![cc_9.png](./images/cc_9.png)
+
+同意画面が表示されますので、`Install`をクリックします。
+
+![cc_10.png](./images/cc_10.png)
+
+これでGitHub拡張がインストールされました。
+
+## GitHubアカウントとリンクする
+
+インストールしたGitHub拡張を使って、GitHubアカウントをリンクします。
+
+`Connect GitHub Account`をクリックします。
+
+![cc_11.png](./images/cc_11.png)
+
+ユーザIDとパスワードを入力して、`Sign in`をクリックします。
+
+![cc_12.png](./images/cc_12.png)
+
+※GitHub Mobileの認証が必要な場合は、認証を行ってください。
+
+![cc_13.png](./images/cc_13.png)
+
+`Authorize Amazon CodeCatalyst`をクリックします。
+
+![cc_14.png](./images/cc_14.png)
+
+これでGitHubアカウントとリンクされました。
+
+![cc_15.png](./images/cc_15.png)
+
+## まとめ
+
+以上でAmazon CodeCatalystのセットアップが完了しました。
+これで、CodeCatalystを使ってGitHubのリポジトリを使ったプロジェクトを作成できます。
+今回は、AWS Builder IDを使ってセットアップの過程を紹介しましたが、IAM Identity Centerを使ってログインすることも可能です。
