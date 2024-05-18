@@ -1,9 +1,9 @@
-# 検証！Amazon CodeCatalystのDev Environmentで快適なVSCode環境を構築してみる
+# 検証！Amazon CodeCatalystのDev Environmentで快適なVS Code環境を構築してみる
 
 ## はじめに
 
 この記事では
-Amazon CodeCatalystのDev Environmentを使って、VSCodeの開発環境を構築する方法を紹介します。
+Amazon CodeCatalystのDev Environmentを使って、VS Codeの開発環境を構築する方法を紹介します。
 主な内容としては実践したときのメモを中心に書きます。（忘れやすいことなど）
 誤りなどがあれば修正していく想定です。
 
@@ -32,7 +32,7 @@ AWS上でVisual Studio CodeなどのIDEを起動できます。
 
 ### 補足：他にはどんなIDEが使えるのか
 
-Dev EnvironmentではVSCode以外にも以下のIDEが使えるようです。
+Dev EnvironmentではVS Code以外にも以下のIDEが使えるようです。
 
 - IntelliJ IDEA Ultimate
 - GoLand
@@ -43,6 +43,25 @@ Dev EnvironmentではVSCode以外にも以下のIDEが使えるようです。
 ## Dev Environmentの料金
 
 Dev Environmentは時間という単位で課金されるため、一見してCloud9で発生するようなコンピューティング料金と同じに見えるかもしれませんが、明確な違いがあります。
+また、CodeCatalystにはプランがあります。プランによって利用できる時間や料金が異なります。
+
+| プラン名 | 利用可能時間 | 料金 |
+| --- | --- | --- |
+| Free | 60時間/月 | 無料 |
+| Standard | 200時間 | $4 per active user※ |
+| Enterprise | 160時間 | $20 per user |
+
+※active user：その月にCodeCatalystにログインしたユーザーを、その月にアクティブなユーザーとみなします。
+
+- [料金に関する記載](https://codecatalyst.aws/explore/pricing)
+
+無料で利用できる範囲もそうですが、`アクティブユーザー`という考え方があるのがポイントです。
+個人ユーザで課金したい場合は、Standardプランがオススメかもしれません。
+
+## 実際にDev Environmentを使ってみる
+
+では、実際にDev Environmentを使ってみましょう。セットアップ方法は前回の記事を参照してください。
+[検証！AWS Builder IDを使ってAmazon CodeCatalystをセットアップする 前回の記事](https://qiita.com/ymd65536/items/6b52dd87e74d8b172db4)
 
 ## 参考
 
